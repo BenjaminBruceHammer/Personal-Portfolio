@@ -1,0 +1,170 @@
+/*Universal*/
+
+/* Colour Scheme
+Primary colour  #213473
+secondary colour #DEBDDB;
+3rd colour  #F07EF2; */
+
+html, body, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    background-color: gainsboro;
+}
+
+/*NAVBAR*/
+header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #213473;
+    border-bottom: solid 10px #DEBDDB;
+    z-index: 1;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+header .logo {
+    color: seashell;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 0.2rem 1rem; 
+}
+
+.menu {
+    margin-right: 0.7rem;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0.7rem;
+}
+
+.menu a {
+    color: #DEBDDB;
+    text-decoration: solid;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.04rem;
+}
+
+.menu a:hover {
+    color: #F07EF2;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+/*BODY*/
+
+body { 
+    padding-top: 9.5rem;
+    padding-right: 7rem;
+}
+
+section .hero {
+    height: 600px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    border: solid 6px #213473;
+}
+
+.hero span {
+    color: #213473;
+    font-size: 3rem;
+    font-weight: 500;
+    padding-left: 1rem;
+
+}
+
+.hero div {
+    margin: auto 5rem;
+}
+
+/* title Animation start */
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #3D8DAE;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* title Animation end */
+
+
+
+
+/* original Colours   .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #3D8DAE;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+
+    */
