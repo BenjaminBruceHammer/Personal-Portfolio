@@ -6,12 +6,21 @@ secondary colour #DEBDDB;
 3rd colour  #F07EF2; */
 
 html, body, footer {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: 'Poppins', 'Roboto', sans-serif;
-    background-color: gainsboro;
+  margin: 0;
+  padding: 0;
+  background-color: gainsboro;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 1.8rem;
 }
 
 /*NAVBAR*/
@@ -36,23 +45,24 @@ nav {
 
 header .logo {
     color: seashell;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    padding: 0.2rem 1rem; 
+    padding: 1rem 1.5rem; 
 }
 
 .menu {
-    margin-right: 0.7rem;
+    margin-right: 1.5rem;
 }
 
 .menu li {
     display: inline-block;
-    padding: 0.7rem;
+    padding-left: 0.7rem;
+    padding-top: 0.7rem;
 }
 
 .menu a {
     color: #DEBDDB;
-    text-decoration: solid;
+    text-decoration: none;
     font-weight: 500;
     font-size: 1.2rem;
     letter-spacing: 0.04rem;
@@ -65,13 +75,57 @@ header .logo {
 
 }
 
+#logo-small {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  
+  #big-logo {
+    display: none;
+  }
+
+  #logo-small {
+    display: block;
+  }
+}
+  @media screen and (max-width: 720px) {
+
+  .menu a {
+    font-size: 1rem;
+  
+}
+}
+
+@media screen and (max-width: 480px) {
+
+  #logo-small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .menu a {
+    font-size: 0.8rem;
+  
+}
+}
+
 /*BODY*/
 
 body { 
     padding-top: 9.5rem;
-    padding-right: 7rem;
 }
 
+.projects, .about, .skills, .contact  {
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #213473;
+}
+
+/*hero*/
 section .hero {
     height: 600px;
 }
@@ -93,11 +147,36 @@ section .hero {
     font-size: 3rem;
     font-weight: 500;
     padding-left: 1rem;
+    
 
 }
 
 .hero div {
-    margin: auto 5rem;
+  margin: auto 0;
+  padding-right: 200px;
+}
+
+@media screen and (max-width: 720px) {
+
+  .hero {
+    display: block;
+    padding-left: 28%;
+}
+body { 
+  padding-top: 5rem;
+}
+
+.hero img {
+margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 380px) {
+
+  .hero {
+    display: block;
+    padding-left: 8%;
+}
 }
 
 /* title Animation start */
@@ -141,30 +220,54 @@ section .hero {
   
   /* title Animation end */
 
+/*skills*/
 
+#skills-logos {
+  display: flex;
+  justify-content: space-around;
 
+}
 
-/* original Colours   .title-word-1 {
-    --color-1: #DF8453;
-    --color-2: #3D8DAE;
-    --color-3: #E4A9A8;
-  }
+#skills-logos img {
+  width: 50px;
+  height: auto;
+}
+
+/*contact*/
+
+.contact {
+  background-color: #DEBDDB;
+  border-top: solid 3px #213473;
+  border-bottom: solid 3px #213473;
+}
+
+#contact-details {
+  display: flex;
+}
+
+#contact a {
+  color: #213473;
   
-  .title-word-2 {
-    --color-1: #DBAD4A;
-    --color-2: #ACCFCB;
-    --color-3: #17494D;
-  }
-  
-  .title-word-3 {
-    --color-1: #3D8DAE;
-    --color-2: #E4A9A8;
-    --color-3: #ACCFCB;
-  }
-  
-  .title-word-4 {
-    --color-1: #3D8DAE;
-    --color-2: #DF8453;
-    --color-3: #E4A9A8;
+}
 
-    */
+#contact a:hover {
+  color: #F07EF2;
+  cursor: pointer;
+  
+  
+}
+/*footer*/
+footer p {
+  color: #213473;
+  text-align: center;
+}
+
+
+footer span {
+  color: #F07EF2;
+  font-size: 1rem;
+}
+
+footer p {
+  font-size: 1rem;
+}
